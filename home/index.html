@@ -2092,9 +2092,7 @@
             // 更换背景图片
             function backgroundImage() {
                 var httpclient = new XMLHttpRequest();
-                var pub_img_num = 8;
-                var imgNum = Math.floor(Math.random() * pub_img_num + 1);
-                var url = "http://image.xhinliang.com/api/image/" + imgNum;
+                var url = "http://image.xhinliang.com/api/image/random";
                 httpclient.open("get", url, true);
 
                 function transferComplete(evt) {

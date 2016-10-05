@@ -1,0 +1,7 @@
+{
+  "mongoUrl": "mongodb://localhost",
+  "cookieSecret": "xhinliang_lofter",
+  "dbName": "xhinliang_lofter",
+  "host": "localhost",
+  "port": 27017
+}

@@ -1,0 +1,13 @@
+machine:
+  node:
+    version: 6
+
+dependencies:
+  pre:
+    - openssl -aes-256-cbc -d -in sauce-encrypted-env-vars -out ~/.circlerc -k $SAUCE_DECRYPT_KEY
+
+test:
+  override:
+    - npm run lint -s
+    - npm run test -s
+    - npm run test:sauce

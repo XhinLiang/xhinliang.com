@@ -1,0 +1,8 @@
+{
+  "port": 23333,
+  "password": "wecanstudio2016",
+  "whiteOrigins": [
+    "http://home.xhinliang.com",
+    "http://home.webdev.com"
+  ]
+}

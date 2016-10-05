@@ -14,7 +14,7 @@ function parsePost(html, task) {
 
     object.list = [];
 
-    $("img").each(function() {
+    $("div.pic img").each(function() {
         let img = $(this).attr("src");
         object.list.push(img);
     });

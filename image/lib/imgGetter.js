@@ -3,8 +3,7 @@ const spidex = require("spidex");
 const path = require("path");
 const fs = require("fs");
 const URL = require("url");
-const redis = require("redis");
-const redisClient = redis.createClient();
+const cache = require('../db/cache');
 const base = 'download';
 
 function getSaveFile() {
@@ -29,7 +28,7 @@ function getSaveFile() {
 
 function getSaveRedis() {
     return function(year, month, filename, buf, url, callback) {
-        redisClient.sadd('xhinliang_lofter', url, redis.print);
+        cache.sadd('xhinliang_lofter', url, redis.print);
         callback(null);
     }
 }

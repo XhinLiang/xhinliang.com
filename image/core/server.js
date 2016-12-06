@@ -1,4 +1,7 @@
 'use strict';
+const redis = require("redis");
+const redisClient = redis.createClient();
+
 const app = require('./app');
 const config = require('../config/main.json');
 const port = config['port'];

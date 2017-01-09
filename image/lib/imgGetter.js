@@ -28,7 +28,7 @@ function getSaveFile() {
 
 function getSaveRedis() {
     return function(year, month, filename, buf, url, callback) {
-        cache.sadd('xhinliang_lofter', url, redis.print);
+        cache.sadd('xhinliang_lofter', url, cache.print);
         callback(null);
     }
 }

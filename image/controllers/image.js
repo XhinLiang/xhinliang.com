@@ -2,8 +2,7 @@
 
 const tool = require('../core/tool');
 const config = require('../config/main.json');
-const redis = require('redis');
-const redisClient = redis.createClient();
+const redisClient = require('../db/cache');
 
 let pub = {};
 

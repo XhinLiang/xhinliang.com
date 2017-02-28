@@ -6,5 +6,7 @@ const router = require('express').Router();
 const imageController = require('../controllers/image');
 
 router.get('/image/random', imageController.getImageUrl);
+router.post('/image/test', imageController.test);
+router.get('/image/test', imageController.test);
 
 module.exports = router;

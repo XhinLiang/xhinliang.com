@@ -16,4 +16,8 @@ pub.getImageUrl = async(req, res) => {
     });
 }
 
+pub.test = async(req, res) => {
+    console.log(JSON.stringify(req.headers));
+    res.send(JSON.stringify({code: 0, message: 'ok', data: 'hehe'}));
+}
 module.exports = pub;

@@ -10,7 +10,6 @@ transitions in modern browsers and inspired by the idea behind prezi.com.
 
 impress.js may not help you if you have nothing interesting to say ;)
 
-
 HOW TO USE IT
 ---------------
 

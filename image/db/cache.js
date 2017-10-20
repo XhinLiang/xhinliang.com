@@ -1,4 +1,4 @@
 const redis = require("redis");
-const redisClient = redis.createClient({password: 'redis_xhinliang'});
+const redisClient = redis.createClient();
 
 module.exports = redisClient;

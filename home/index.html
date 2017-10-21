@@ -2307,18 +2307,16 @@
                     pub_img_current_image = response;
                     var url =
                         'http://imglf1.nosdn.127.net/img/SXprQWxxRVhvTjNiYURoWUR6R1hYQWJ1c21TUkM5dGRTYnozSTMwQ2dERWJ2MEhuNStkbm53PT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg';
-                    // pub_img_current_image = url;
+                    pub_img_current_image = url;
                     var iframe = document.getElementById('iframe_background');
                     if (iframe) {
                         iframe.remove();
                     }
                     iframe = document.createElement('iframe');
                     iframe.id = 'iframe_background';
-                    var iframeDocument = iframe.contentDocument;
-
-                    var html = '<div/>';
-                    iframe.src = 'javascript:void(function(){document.open();document.write(\'' + html +
-                        '\');document.close();}())';
+                    // var html = '<div/>';
+                    // iframe.src = 'javascript:void(function(){document.open();document.write(\'' + html +
+                    //     '\');document.close();}())';
                     iframe.style.size = "fixed";
                     iframe.style.width = "100%";
                     iframe.style.height = "100%";

@@ -1,10 +1,10 @@
 {
   "port": 23333,
   "whiteOrigins": [
-    "http://home.xhinliang.com",
-    "home.xhinliang.com",
+    "http://xhinliang.com",
+    "xhinliang.com",
     "http://home.webdev.com",
-    "https://home.xhinliang.com",
+    "https://xhinliang.com",
     "https://home.webdev.com"
   ]
 }

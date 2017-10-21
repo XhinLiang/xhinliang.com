@@ -1,5 +1,5 @@
 {
-    "name": "lofter-spider",
+    "name": "site",
     "version": "0.0.2",
     "description": "Image Spider of lofter",
     "main": "spider.js",
@@ -24,7 +24,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/XhinLiang/lofter-spider.git"
+        "url": "git://github.com/XhinLiang/site"
     },
     "keywords": [
         "spider",

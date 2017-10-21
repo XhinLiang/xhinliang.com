@@ -17,4 +17,4 @@ ENV NODE_ENV=prod
 ENV CONFIG_BASEDIR=/configs
 ENV CONFIG_DIR=site-image
 CMD ["/usr/bin/supervisord"]
-EXPOSE 8081
+EXPOSE 2333

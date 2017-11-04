@@ -1,0 +1,16 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "dependencies": {
+    "js-beautify": "^1.7.4",
+    "markdown": "^0.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "node build.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

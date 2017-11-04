@@ -9,8 +9,11 @@ COPY ./dockerfiles/xhinliang.com.conf /etc/nginx/sites-available/default
 COPY ./dockerfiles/redis.conf /etc/redis/redis.conf
 
 ADD . /app
-WORKDIR /app/image
-RUN npm install
+
+RUN cd /app/resume && npm install && npm run build
+
+RUN cd /app/image && npm install
+
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 ENV NODE_ENV=prod

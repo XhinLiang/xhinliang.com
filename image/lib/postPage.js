@@ -58,8 +58,9 @@ function get(task) {
             console.log("× 文章 [" + task.task.url + " ] 抓取错误：" + err.message);
 
             // 重新push
-            // 失败后不重新 push
             //task.task.queue.push(task.task, get);
+
+            // 失败后不重新 push
             task.task.queue.taskDone(task, true);
             return;
         }

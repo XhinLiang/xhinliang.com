@@ -6,22 +6,22 @@ const redisClient = require('../db/cache');
 
 let controller = {};
 
-controller.getImageUrl = async(req, res) => {
-    redisClient.srandmember('xhinliang_lofter', function(err, replies) {
+controller.getImageUrl = async (req, res) => {
+    redisClient.srandmember('xhinliang_lofter', function (err, replies) {
         if (err) {
             res.send(err);
             return;
         }
-        res.send(replies);
+        res.send(replies.replace("http://", "https://"));
     });
 }
 
-controller.test = async(req, res) => {
-    res.send(JSON.stringify({code: 0, message: 'ok', data: 'hehe'}));
+controller.test = async (req, res) => {
+    res.send(JSON.stringify({ code: 0, message: 'ok', data: 'hehe' }));
 }
 
-controller.list = async(req, res) => {
-    redisClient.smembers('xhinliang_lofter', function(err, replies) {
+controller.list = async (req, res) => {
+    redisClient.smembers('xhinliang_lofter', function (err, replies) {
         if (err) {
             res.send(err);
             return;

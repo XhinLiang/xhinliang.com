@@ -5,6 +5,7 @@ const fs = require("fs");
 const URL = require("url");
 const cache = require('../db/cache');
 const base = 'download';
+const tool = require("../core/tool");
 
 function getSaveFile() {
     let tmpYear = 0;
@@ -28,8 +29,13 @@ function getSaveFile() {
 
 function getSaveRedis() {
     return function(year, month, filename, buf, url, callback) {
-        cache.sadd('xhinliang_lofter', url, cache.print);
-        cache.sadd('xhinliang_lofter_temp', url, cache.print);
+        let key = tool.getNextRedisKey();
+        cache.sadd(key, url, cache.print);
+        cache.expire(key, 60 * 60 * 4);
+
+        key = tool.getCurrentRedisKey();
+        cache.sadd(key, url, cache.print);
+        cache.expire(key, 60 * 60 * 4);
         callback(null);
     }
 }
@@ -94,7 +100,6 @@ function get(task) {
 
                 // 重新push
                 task.task.queue.push(task.task, get);
-
                 task.task.queue.taskDone(task, true);
                 return;
             }

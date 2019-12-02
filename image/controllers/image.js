@@ -3,11 +3,12 @@
 const tool = require('../core/tool');
 const config = require('../config/main.json');
 const redisClient = require('../db/cache');
+const tool = require("../core/tool");
 
 let controller = {};
 
 controller.getImageUrl = async (req, res) => {
-    redisClient.srandmember('xhinliang_lofter', function (err, replies) {
+    redisClient.srandmember(tool.getCurrentRedisKey(), function (err, replies) {
         if (err) {
             res.send(err);
             return;
@@ -21,7 +22,7 @@ controller.test = async (req, res) => {
 }
 
 controller.list = async (req, res) => {
-    redisClient.smembers('xhinliang_lofter', function (err, replies) {
+    redisClient.smembers(tool.getCurrentRedisKey(), function (err, replies) {
         if (err) {
             res.send(err);
             return;

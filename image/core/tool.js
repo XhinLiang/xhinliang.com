@@ -8,6 +8,16 @@ pub.l = function(msg){
 
 pub.debug = pub.l;
 
+pub.getCurrentRedisKey = function () {
+  let timestamp = Date.now();
+  return "lofter_" + ( timestamp / 1000 / 60 / 60);
+}
+
+pub.getNextRedisKey = function () {
+  let timestamp = Date.now();
+  return "lofter_" + ( timestamp / 1000 / 60 / 60 + 1);
+}
+
 pub.fail = function(res, err) {
   res.status(err.status).send({
     err: err.status,

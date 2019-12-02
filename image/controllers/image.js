@@ -13,7 +13,7 @@ controller.getImageUrl = async (req, res) => {
             res.send(err);
             return;
         }
-        res.send(replies.replace("http://", "https://"));
+        res.send(replies.replace("http://", "https://").replace("1680x0", "2560x0"));
     });
 }
 

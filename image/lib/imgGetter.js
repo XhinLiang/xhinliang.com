@@ -12,7 +12,7 @@ function getSaveFile() {
     let tmpMonth = 0;
     let tmpIndex = 0;
 
-    return function(year, month, filename, buf, url, callback) {
+    return function (year, month, filename, buf, url, callback) {
         if (tmpYear != year || tmpMonth != month) {
             tmpIndex = 0;
             tmpYear = year;
@@ -28,14 +28,13 @@ function getSaveFile() {
 }
 
 function getSaveRedis() {
-    return function(year, month, filename, buf, url, callback) {
+    return function (year, month, filename, buf, url, callback) {
         let key = tool.getNextRedisKey();
         cache.sadd(key, url, cache.print);
-        cache.expire(key, 60 * 60 * 4);
-
+        cache.expire(key, 60 * 60 * 4, cache.print);
         key = tool.getCurrentRedisKey();
         cache.sadd(key, url, cache.print);
-        cache.expire(key, 60 * 60 * 4);
+        cache.expire(key, 60 * 60 * 4, cache.print);
         callback(null);
     }
 }
@@ -48,7 +47,7 @@ switch (process.argv[1]) {
         saveImage = saveFile;
         break;
     case '--all':
-        saveImage = function(year, month, filename, buf, url, callback) {
+        saveImage = function (year, month, filename, buf, url, callback) {
             saveFile(year, month, filename, buf, url, callback);
             saveRedis(year, month, filename, buf, url, callback);
         };
@@ -77,7 +76,7 @@ function get(task) {
             "referer": task.task.referer,
             "user-agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
         }
-    }, function(html, status) {
+    }, function (html, status) {
         if (status !== 200) {
             console.log("× 抓取图片 [" + filename + "] 失败：服务器返回错误状态码.");
 
@@ -94,7 +93,7 @@ function get(task) {
             return;
         }
 
-        saveImage(year, month, filename, html, url, function(err) {
+        saveImage(year, month, filename, html, url, function (err) {
             if (err) {
                 console.log("× 写入图片 " + year + month + " [" + filename + "] 失败：" + err.message);
 
@@ -107,7 +106,7 @@ function get(task) {
             console.log("√ 写入图片 " + year + month + " [" + filename + "] 成功.");
             task.task.queue.taskDone(task, true);
         });
-    }).on("error", function(err) {
+    }).on("error", function (err) {
         console.log("× 抓取图片 " + year + month + " [" + filename + "] 失败：" + err.message);
 
         // 重新push

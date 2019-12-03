@@ -3,7 +3,6 @@
 const tool = require('../core/tool');
 const config = require('../config/main.json');
 const redisClient = require('../db/cache');
-const tool = require("../core/tool");
 
 let controller = {};
 

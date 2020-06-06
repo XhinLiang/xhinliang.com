@@ -1,19 +1,19 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
-
+    
 <script>
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?e08b4b9bc05777c31002df0a7e305b80";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e08b4b9bc05777c31002df0a7e305b80";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="Movable Type 5.2.2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="referrer" content="no-referrer" />
     <link rel="start" href="https://xhinliang.com/" title="Home">
@@ -175,7 +175,6 @@
             from {
                 opacity: 0.99;
             }
-
             to {
                 opacity: 1;
             }
@@ -185,7 +184,6 @@
             from {
                 opacity: 0.99;
             }
-
             to {
                 opacity: 1;
             }
@@ -195,7 +193,6 @@
             from {
                 opacity: 0.99;
             }
-
             to {
                 opacity: 1;
             }
@@ -205,7 +202,6 @@
             from {
                 opacity: 0.99;
             }
-
             to {
                 opacity: 1;
             }
@@ -345,8 +341,7 @@
     </style>
 </head>
 
-<body id="classic-website" class="mt-main-index one-column"
-    style="background-size: cover; background-repeat: no-repeat;">
+<body id="classic-website" class="mt-main-index one-column" style="background-size: cover; background-repeat: no-repeat;">
     <div id="container">
         <div id="container-inner">
 
@@ -375,15 +370,13 @@
                                             <a class="image" data-tip="About" id="about" href="/about/"></a>
                                         </li>
                                         <li>
-                                            <a class="image" data-tip="GitHub" id="github"
-                                                href="https://github.com/XhinLiang"></a>
+                                            <a class="image" data-tip="GitHub" id="github" href="https://github.com/XhinLiang"></a>
                                         </li>
                                         <li>
                                             <a class="image" data-tip="Resume" id="resume" href="/resume/"></a>
                                         </li>
                                         <li>
-                                            <a class="image" data-tip="Weibo" id="weibo"
-                                                href="https://weibo.com/XhinLiang"></a>
+                                            <a class="image" data-tip="Weibo" id="weibo" href="https://weibo.com/XhinLiang"></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -417,20 +410,12 @@
             </div>
         </div>
         <script>
-            // 初始化 iframe
-            var iframe = document.createElement('iframe');
-            iframe.id = 'iframe_background';
-            iframe.src = 'javascript:void(function(){document.open();document.write(\'' + '<div/>' +
-                '\');document.close();}())';
-            iframe.style.size = "fixed";
-            iframe.style.width = "100%";
-            iframe.style.height = "100%";
-            iframe.style.border = 0;
-            iframe.style.zIndex = -1;
-            iframe.style.top = 0;
-            iframe.style.left = 0;
-            var body = document.querySelector("body").appendChild(iframe);
-
+            var pub_img_current_image;
+            if ('querySelector' in document) {
+                var body = document.querySelector('body').style;
+            } else {
+                var body = document.body.style;
+            }
             // 更换背景图片
             function backgroundImage() {
                 var httpclient = new XMLHttpRequest();
@@ -439,11 +424,13 @@
 
                 function transferComplete(evt) {
                     var response = httpclient.responseText;
-                    var idom = document.getElementById('iframe_background').contentDocument;
-                    idom.body.style.margin = 0;
-                    idom.body.style.backgroundSize = 'cover';
-                    idom.body.style.backgroundRepeat = 'no-repeat';
-                    idom.body.style.backgroundImage = 'url(' + response + ')';
+                    pub_img_current_image = response;
+                    body.backgroundSize = 'cover';
+                    body.backgroundRepeat = 'no-repeat';
+                    body.backgroundImage = 'url(' + pub_img_current_image + ')';
+                    var span = document.getElementById('img_placer');
+                    span.innerHTML = '<span style="background-image: url(' + pub_img_current_image +
+                        ');width: 0px;height: 0px;display: inline;"></span>';
                 }
                 httpclient.addEventListener("load", transferComplete, false);
                 httpclient.send();

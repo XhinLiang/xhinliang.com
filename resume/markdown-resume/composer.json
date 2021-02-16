@@ -1,0 +1,88 @@
+{
+    "name": "there4/markdown-resume",
+    "description": "Markdown Resume Generator",
+    "homepage": "https://github.com/there4/markdown-resume",
+    "keywords": [
+        "markdown",
+        "resume",
+        "html5"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Craig Davis",
+            "email": "craig@there4.io",
+            "role": "Developer"
+        },
+        {
+            "name": "Kaiwen Xu",
+            "email": "kevin@kevxu.net",
+            "role": "Contributor"
+        },
+        {
+            "name": "ishitcno1",
+            "role": "Contributor"
+        },
+        {
+            "name": "Roland O'Leary",
+            "role": "Contributor"
+        },
+        {
+            "name": "Abhishek Kandoi",
+            "email": "abhikandoi2000@gmail.com",
+            "role": "Contributor"
+        },
+        {
+          "name": "Erik Waibel",
+          "email": "ejwaibel@gmail.com",
+          "role": "Contributor"
+        },
+        {
+          "name": "Benedikt Franke",
+          "email": "benedikt@franke.tech",
+          "role": "Contributor"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/there4/markdown-resume/issues"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1",
+        "kriswallsmith/assetic": "1.1.2",
+        "leafo/lessphp": "v0.4.0",
+        "michelf/php-markdown": "1.4.0",
+        "michelf/php-smartypants": "^1.8",
+        "mustache/mustache": "2.5.1",
+        "sunra/php-simple-html-dom-parser": "v1.5.0",
+        "symfony/config": "v2.3.4",
+        "symfony/console": "v2.3.4",
+        "symfony/yaml": "v2.3.4",
+        "twig/twig": "v1.13.2",
+        "symfony/event-dispatcher": "^4.0@dev",
+        "leafo/scssphp": "dev-master"
+    },
+    "bin": [
+        "bin/md2resume"
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^6.2",
+        "squizlabs/php_codesniffer": "^3.0@dev",
+        "jakub-onderka/php-parallel-lint": "dev-master",
+        "jakub-onderka/php-console-highlighter": "dev-master"
+    },
+    "scripts": {
+        "build": [
+            "@lint",
+            "@format",
+            "@sniff",
+            "@test",
+            "@readme"
+        ],
+        "lint": "vendor/bin/parallel-lint --exclude app --exclude vendor .",
+        "sniff": "vendor/bin/phpcs --standard=PSR2 -n --extensions=php src",
+        "format": "vendor/bin/phpcbf --standard=PSR2 --extensions=php src",
+        "readme": "build/update_readme.php",
+        "test": "vendor/bin/phpunit"
+    }
+}

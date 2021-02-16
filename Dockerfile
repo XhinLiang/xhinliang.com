@@ -15,7 +15,7 @@ COPY ./dockerfiles/redis.conf /etc/redis/redis.conf
 ADD . /app
 
 # init path /resume
-RUN cd /app/resume && npm install && npm run build
+RUN cd /app/resume && ./markdown-resume/bin/md2resume html resume.md /app/resume && mv /app/resume/resume.html /app/resume/index.html
 
 # init path /image
 RUN cd /app/image && npm install

@@ -1,0 +1,45 @@
+#!/usr/bin/env php
+<?php
+error_reporting(E_ALL | E_STRICT);
+
+$baseDir = dirname(__DIR__);
+$cwd = getcwd();
+$templatePath = $baseDir . '/templates';
+$consoleTemplatePath = $baseDir . '/src/Resume/Templates';
+
+// When md2resume is used as a dependency with composer, it resides in the
+// 'vendor/markdown-resume' directory. This means that the 'autoload.php' is
+// actually much higher in the directory tree than is normally expected.
+$autoloadPath = (strpos($baseDir, 'vendor')) ? realpath($baseDir . '/../../autoload.php') : $baseDir . '/vendor/autoload.php';
+
+// If the dependencies aren't installed, we have to bail and offer some help.
+if (!file_exists($autoloadPath)) {
+    exit("\nThe dependency '$autoloadPath' was not found. Please run `composer install` to install dependencies.\n\n");
+}
+
+// Bootstrap our application with the Composer autoloader
+$app = include $autoloadPath;
+
+// Setup the namespace for our own namespace
+$app->add('Resume', $baseDir . '/src');
+
+// Instantiate our Console application
+$console = new Resume\Cli\Resume();
+
+// Fetch the version
+chdir($baseDir);
+$versionCmd = 'git describe --abbrev=0 --tags 2>/dev/null';
+$version    = trim(shell_exec($versionCmd));
+chdir($cwd);
+
+// Fetch the project name and description
+$project = json_decode(file_get_contents(__DIR__ . '/../composer.json'));
+$project->version = $version;
+
+// Init the app with these params
+$console->initialize($templatePath, $consoleTemplatePath, $project);
+
+// Execute the console app.
+$console->run();
+
+/* End of resume.php */

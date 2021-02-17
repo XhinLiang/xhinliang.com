@@ -19,7 +19,7 @@ COPY ./dockerfiles/redis.conf /etc/redis/redis.conf
 ADD . /app
 
 # install composer
-RUN cd /app/resume && php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');" && php composer-setup.php
+RUN cd /app/resume/markdown-resume && php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');" && php composer-setup.php
 
 # init path /resume
 RUN cd /app/resume/markdown-resume && php composer.phar install && cd .. && ./markdown-resume/bin/md2resume html resume.md /app/resume && mv /app/resume/resume.html /app/resume/index.html

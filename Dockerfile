@@ -18,8 +18,11 @@ COPY ./dockerfiles/redis.conf /etc/redis/redis.conf
 # init root directory
 ADD . /app
 
+# install composer
+RUN cd /app/resume && php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');" && php composer-setup.php
+
 # init path /resume
-RUN cd /app/resume && ./markdown-resume/bin/md2resume html resume.md /app/resume && mv /app/resume/resume.html /app/resume/index.html
+RUN cd /app/resume && php composer.phar install && ./markdown-resume/bin/md2resume html resume.md /app/resume && mv /app/resume/resume.html /app/resume/index.html
 
 # init path /image
 RUN cd /app/image && npm install

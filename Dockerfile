@@ -6,6 +6,8 @@ COPY --from=node /usr/local/bin/node /usr/local/bin/node
 
 RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
 
+sed -i 's#http://deb.debian.org#https://mirrors.163.com#g' /etc/apt/sources.list
+
 # install dependencies
 RUN apt-get update --fix-missing && apt-get -y --force-yes upgrade && apt-get install -y --force-yes supervisor curl redis-server nginx git
 

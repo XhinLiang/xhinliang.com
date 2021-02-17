@@ -1,7 +1,11 @@
-FROM php
-COPY php.* ./
+FROM node:7 AS node
+FROM php:7.4-fpm
 
-FROM node:7
+COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
+COPY --from=node /usr/local/bin/node /usr/local/bin/node
+
+RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
+
 RUN echo "deb http://cn.archive.ubuntu.com/ubuntu/ precise main universe" > /etc/apt/sources.list
 
 # install dependencies

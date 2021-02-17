@@ -29,10 +29,10 @@ Focus in backend deployment
 
 1. Java / Python / JavaScript
 2. Netty / JUC / Guava
-3. Linux / macOS
-4. MySQL / Redis
-5. gRPC / ZooKeeper 
-6. Kafka / RocksMQ
+3. TCP / HTTP / WebSocket
+4. MySQL / Redis / Memcached
+5. gRPC / ZooKeeper / Kafka
+6. Linux / macOS
 
 ------
 
@@ -44,14 +44,9 @@ Kuaishou
   Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials.
 
 Tencent
-: *full-stack web developer*
+: *full-stack web developer, mobile application developer*
   __2017.7-2018.1__
   Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials.
-
-Tencent
-: *mobile application developer*
-  __2017.7-2017.10__
-  Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
 
 Tencent
 : *backend developer, intern*

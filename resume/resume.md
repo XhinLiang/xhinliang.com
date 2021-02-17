@@ -1,7 +1,8 @@
 # Xhin Liang
 ## Senior software engineer, full-stack web developer.
 
-> <x@xhinliang.com>
+> *mailto* <x@xhinliang.com>  
+> *online* [xhinliang.com/resume](xhinliang.com/resume)
 
 ------
 
@@ -48,15 +49,19 @@ Tencent
   Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials.
 
 Tencent
-: *iOS developer*
+: *mobile application developer*
   __2017.7-2017.10__
   Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
 
 Tencent
-: *backend intern*
+: *backend developer, intern*
   __2016.5-2017.5__
   Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
 
+Xidian University
+: *informatics engineering, bachelor degree*
+  __2013.8-2017.7__
+  Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
 ------
 
 ### Footer {#footer}

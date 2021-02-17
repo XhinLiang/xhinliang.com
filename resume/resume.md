@@ -38,12 +38,12 @@ Focus in backend deployment
 ### Experience {#experience}
 
 Kuaishou
-: *Senior backedn developer*
+: *senior software engineer*
   __2018.1-NOW__
   Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials.
 
 Tencent
-: *Full-Stack Web Developer*
+: *full-stack web developer*
   __2017.7-2018.1__
   Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials.
 
@@ -53,7 +53,7 @@ Tencent
   Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
 
 Tencent
-: *Backend Intern*
+: *backend intern*
   __2016.5-2017.5__
   Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
 

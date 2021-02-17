@@ -1,9 +1,11 @@
-FROM node:7
+FROM php
+COPY php.* ./
 
+FROM node:7
 RUN echo "deb http://cn.archive.ubuntu.com/ubuntu/ precise main universe" > /etc/apt/sources.list
 
 # install dependencies
-RUN add-apt-repository ppa:ondrej/php && apt-get update --fix-missing && apt-get -y --force-yes upgrade && apt-get install -y --force-yes supervisor curl redis-server nginx php7.3 php7.3-common php7.3-cli
+RUN apt-get update --fix-missing && apt-get -y --force-yes upgrade && apt-get install -y --force-yes supervisor curl redis-server nginx
 
 # init nginx
 COPY ./dockerfiles/supervisord.conf /etc/supervisor/conf.d/supervisord.conf

@@ -57,6 +57,7 @@ Xidian University
 : *informatics engineering, bachelor degree*
   __2013.8-2017.7__
   Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
+
 ------
 
 ### Footer {#footer}

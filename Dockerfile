@@ -1,6 +1,11 @@
 FROM node:7 AS node
 FROM php:7.4-fpm
 
+# init env varioubles
+ENV NODE_ENV=prod
+ENV CONFIG_BASEDIR=/configs
+ENV CONFIG_DIR=site-image
+
 COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
 COPY --from=node /usr/local/bin/node /usr/local/bin/node
 
@@ -17,25 +22,24 @@ COPY ./dockerfiles/xhinliang.com.conf /etc/nginx/sites-enable/default
 COPY ./dockerfiles/xhinliang.com.conf /etc/nginx/sites-available/default
 COPY ./dockerfiles/redis.conf /etc/redis/redis.conf
 
-# init root directory
-ADD . /app
-
-# install composer
-RUN cd /app/resume/markdown-resume && php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');" && php composer-setup.php
-
-# init path /resume
-RUN cd /app/resume/markdown-resume && php composer.phar config -g repo.packagist composer https://packagist.phpcomposer.com && php composer.phar install --no-dev && cd .. && ./markdown-resume/bin/md2resume html resume.md /app/resume && mv /app/resume/resume.html /app/resume/index.html
-
-# init path /image
-RUN cd /app/image && npm install
-
 # update configuration of nginx using "daemon off" mode
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
-# init env varioubles
-ENV NODE_ENV=prod
-ENV CONFIG_BASEDIR=/configs
-ENV CONFIG_DIR=site-image
+# init root directory
+
+
+COPY resume/markdown-resume/composer.lock /app/resume/markdown-resume/composer.lock
+COPY resume/markdown-resume/composer.json /app/resume/markdown-resume/composer.json
+RUN cd /app/resume/markdown-resume && php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');" && php composer-setup.php
+RUN cd /app/resume/markdown-resume && php composer.phar config -g repo.packagist composer https://packagist.phpcomposer.com && php composer.phar install --no-dev --no-interaction
+
+COPY image/package-lock.json /app/image/package-lock.json
+COPY image/package.json /app/image/package.json
+RUN cd /app/image && npm install
+
+RUN cd /app/resume/ && ./markdown-resume/bin/md2resume html resume.md /app/resume/ && mv /app/resume/resume.html /app/resume/index.html
+
+ADD . /app
 
 # run supervisor
 CMD ["/usr/bin/supervisord"]

@@ -16,17 +16,10 @@ RUN sed -i 's#http://deb.debian.org#http://mirrors.cloud.tencent.com#g' /etc/apt
 # install dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends supervisor curl redis-server nginx git unzip
 
-# init nginx
-COPY ./dockerfiles/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-COPY ./dockerfiles/xhinliang.com.conf /etc/nginx/sites-enable/default
-COPY ./dockerfiles/xhinliang.com.conf /etc/nginx/sites-available/default
-COPY ./dockerfiles/redis.conf /etc/redis/redis.conf
-
 # update configuration of nginx using "daemon off" mode
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 # init root directory
-
 
 COPY resume/markdown-resume/composer.lock /app/resume/markdown-resume/composer.lock
 COPY resume/markdown-resume/composer.json /app/resume/markdown-resume/composer.json
@@ -37,9 +30,15 @@ COPY image/package-lock.json /app/image/package-lock.json
 COPY image/package.json /app/image/package.json
 RUN cd /app/image && npm install
 
-ADD . /app
-RUN cd /app/resume/ && ./markdown-resume/bin/md2resume html resume.md /app/resume/ && mv /app/resume/resume.html /app/resume/index.html
+# init nginx
+COPY ./dockerfiles/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY ./dockerfiles/xhinliang.com.conf /etc/nginx/sites-enable/default
+COPY ./dockerfiles/xhinliang.com.conf /etc/nginx/sites-available/default
+COPY ./dockerfiles/redis.conf /etc/redis/redis.conf
 
+ADD . /app
+RUN cd /app/resume/ && ./markdown-resume/bin/md2resume html en.md /app/resume/ && cp /app/resume/en.html /app/resume/index.html
+RUN cd /app/resume/ && ./markdown-resume/bin/md2resume html cn.md /app/resume/
 # run supervisor
 CMD ["/usr/bin/supervisord"]
 EXPOSE 2333

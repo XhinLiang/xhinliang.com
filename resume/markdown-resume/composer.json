@@ -84,5 +84,11 @@
         "format": "vendor/bin/phpcbf --standard=PSR2 --extensions=php src",
         "readme": "build/update_readme.php",
         "test": "vendor/bin/phpunit"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
     }
 }

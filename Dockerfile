@@ -24,7 +24,7 @@ ADD . /app
 RUN cd /app/resume/markdown-resume && php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');" && php composer-setup.php
 
 # init path /resume
-RUN cd /app/resume/markdown-resume && php composer.phar config -g repo.packagist composer https://packagist.phpcomposer.com && php composer.phar install && cd .. && ./markdown-resume/bin/md2resume html resume.md /app/resume && mv /app/resume/resume.html /app/resume/index.html
+RUN cd /app/resume/markdown-resume && php composer.phar config -g repo.packagist composer https://packagist.phpcomposer.com && php composer.phar install --no-dev && cd .. && ./markdown-resume/bin/md2resume html resume.md /app/resume && mv /app/resume/resume.html /app/resume/index.html
 
 # init path /image
 RUN cd /app/image && npm install

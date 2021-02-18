@@ -1,8 +1,8 @@
 # Xhin Liang
 ## Senior software engineer, full-stack web developer.
 
-> *email* <x@xhinliang.com>  
-> *CN* [xhinliang.com/resume/cn](/resume/cn)
+> ✉️ <x@xhinliang.com> 
+> 🇨🇳 [xhinliang.com/resume/cn](/resume/cn)
 
 ------
 

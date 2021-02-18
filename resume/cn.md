@@ -1,18 +1,18 @@
 # Xhin Liang
 ## Senior software engineer, full-stack web developer.
 
-> *email* <x@xhinliang.com>  
-> *EN* [xhinliang.com/resume/en](/resume/en)
+> ✉️ <x@xhinliang.com> 
+> 🌎 [xhinliang.com/resume/en](/resume/en)
 
 ------
 
-### Profile {#profile}
+### 简介 {#profile}
 
-Focus in backend deployment
+兴趣广泛的软件工程师，目前关注于后端开发与分布式系统。
 
 ------
 
-### Skills {#skills}
+### 技能 {#skills}
 
 * Backend Deployment
   : Assertively exploit wireless initiatives rather than synergistic core competencies.

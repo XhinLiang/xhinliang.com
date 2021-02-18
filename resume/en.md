@@ -2,7 +2,7 @@
 ## Senior software engineer, full-stack web developer.
 
 > *email* <x@xhinliang.com>  
-> *CN* [xhinliang.com/resume/cn.html](/resume/cn.html)
+> *CN* [xhinliang.com/resume/cn](/resume/cn)
 
 ------
 

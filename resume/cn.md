@@ -2,7 +2,7 @@
 ## Senior software engineer, full-stack web developer.
 
 > *email* <x@xhinliang.com>  
-> *EN* [xhinliang.com/resume/en.html](/resume/en.html)
+> *EN* [xhinliang.com/resume/en](/resume/en)
 
 ------
 
@@ -56,7 +56,7 @@ Tencent
 西安电子大学
 : *信息工程，本科*
   __2013.8-2017.7__
-  国家励志奖学金获得者，校友通信使者，学院优秀毕业生。作为校内组织「微客工作室」核心成员参与多次创新比赛，获得「中国青年」APP大赛陕西赛区一等奖、「互联网+」大学生创新创业大赛陕西赛区一等奖。
+  国家励志奖学金获得者，学院优秀毕业生。作为校内组织「微客工作室」核心成员参与多次创新比赛，获得「中国青年」APP大赛陕西赛区一等奖、「互联网+」大学生创新创业大赛陕西赛区一等奖。
 
 ------
 

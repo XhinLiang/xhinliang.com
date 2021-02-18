@@ -1,8 +1,8 @@
 # Xhin Liang
 ## Senior software engineer, full-stack web developer.
 
-> *mailto* <x@xhinliang.com>  
-> *online* [xhinliang.com/resume](xhinliang.com/resume)
+> *email* <x@xhinliang.com>  
+> *EN* [xhinliang.com/resume/en.html](/resume/en.html)
 
 ------
 
@@ -53,15 +53,15 @@ Tencent
   __2016.5-2017.5__
   Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
 
-Xidian University
-: *informatics engineering, bachelor degree*
+西安电子大学
+: *信息工程，本科*
   __2013.8-2017.7__
-  Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
+  国家励志奖学金获得者，校友通信使者，学院优秀毕业生。作为校内组织「微客工作室」核心成员参与多次创新比赛，获得「中国青年」APP大赛陕西赛区一等奖、「互联网+」大学生创新创业大赛陕西赛区一等奖。
 
 ------
 
 ### Footer {#footer}
 
-Personal Website -- [xhinliang.com](xhinliang.com)
+个人网站 -- [xhinliang.com](https://xhinliang.com)
 
 ------

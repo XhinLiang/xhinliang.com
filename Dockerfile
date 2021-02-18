@@ -9,7 +9,7 @@ RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
 RUN sed -i 's#http://deb.debian.org#https://mirrors.163.com#g' /etc/apt/sources.list
 
 # install dependencies
-RUN apt-get update --fix-missing && apt-get -y --force-yes upgrade && apt-get install -y --force-yes supervisor curl redis-server nginx git
+RUN apt-get update && apt-get install -y --no-install-recommends supervisor curl redis-server nginx git unzip
 
 # init nginx
 COPY ./dockerfiles/supervisord.conf /etc/supervisor/conf.d/supervisord.conf

@@ -28,7 +28,7 @@ RUN cd /app/resume/markdown-resume && php composer.phar config -g repo.packagist
 
 COPY image/package-lock.json /app/image/package-lock.json
 COPY image/package.json /app/image/package.json
-RUN cd /app/image && npm install --registry http://registry.cnpmjs.org
+RUN cd /app/image && npm install --registry https://registry.npm.taobao.org
 
 # init nginx
 COPY ./dockerfiles/supervisord.conf /etc/supervisor/conf.d/supervisord.conf

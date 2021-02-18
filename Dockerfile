@@ -37,9 +37,8 @@ COPY image/package-lock.json /app/image/package-lock.json
 COPY image/package.json /app/image/package.json
 RUN cd /app/image && npm install
 
-RUN cd /app/resume/ && ./markdown-resume/bin/md2resume html resume.md /app/resume/ && mv /app/resume/resume.html /app/resume/index.html
-
 ADD . /app
+RUN cd /app/resume/ && ./markdown-resume/bin/md2resume html resume.md /app/resume/ && mv /app/resume/resume.html /app/resume/index.html
 
 # run supervisor
 CMD ["/usr/bin/supervisord"]

@@ -8,14 +8,14 @@
 
 ### Profile {#profile}
 
-A senior software engineer with a wide range of interests, currently focusing on backend development and distributed systems.
+Senior software engineer with a wide range of interests, currently focusing on backend development and distributed systems.
 
 ------
 
 ### Skills {#skills}
 
 * Backend Deployment
-  : Familiar with Java / PHP / Python development language, Understand operating systems, computer networks, distributed systems.
+  : Proficient in with backend deployment, familiar with RDBMS, cache, micro service, operating system, computer network, distributed system and RDBMS.
 
 * Frontend Deployment
   : Understand Android / iOS / Web frontend development, mastered the ability to troubleshoot issues from UI to database.

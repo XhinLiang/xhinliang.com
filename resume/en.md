@@ -15,7 +15,7 @@ Senior software engineer with a wide range of interests, currently focusing on b
 ### Skills {#skills}
 
 * Backend Deployment
-  : Proficient in with backend deployment, familiar with RDBMS, cache, micro service, operating system, computer network, distributed system and RDBMS.
+  : Proficient in backend deployment, familiar with operating system, RDBMS, distributed system and computer network.
 
 * Frontend Deployment
   : Understand Android / iOS / Web frontend development, mastered the ability to troubleshoot issues from UI to database.
@@ -28,7 +28,7 @@ Senior software engineer with a wide range of interests, currently focusing on b
 ### Technical {#technical}
 
 1. Java / Python / JavaScript
-2. Netty / JUC / Guava
+2. Netty / Guava / JUC
 3. TCP / HTTP / WebSocket
 4. MySQL / Redis / Memcached
 5. gRPC / ZooKeeper / Kafka
@@ -56,7 +56,7 @@ Tencent
 Xidian University
 : *informatics engineering, bachelor degree*
   __2013.8-2017.7__
-  Winner of the National Encouragement Scholarship, outstanding graduate of the college. As a core member of the "Wecan Studio" organized by the school, he participated in many innovation competitions and won the first prize in the Shaanxi Division of the "Chinese Youth" APP Competition and the first prize in the Shaanxi Division of the "Internet+" College Student Innovation and Entrepreneurship Competition.
+  Winner of the National Encouragement Scholarship, outstanding graduate of the college. Core member of the "Wecan Studio", won the first prize in the Division of the "Chinese Youth" App Competition and the first prize of Division of the "Internet+" College Innovation Competition.
 
 ------
 

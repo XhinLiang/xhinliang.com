@@ -8,20 +8,20 @@
 
 ### Profile {#profile}
 
-Focus in backend deployment
+A senior software engineer with a wide range of interests, currently focusing on backend development and distributed systems.
 
 ------
 
 ### Skills {#skills}
 
 * Backend Deployment
-  : Assertively exploit wireless initiatives rather than synergistic core competencies.
+  : Familiar with Java / PHP / Python development language, Understand operating systems, computer networks, distributed systems.
 
 * Frontend Deployment
-  : Credibly streamline mission-critical value with multifunctional functionalities.
+  : Understand Android / iOS / Web frontend development, mastered the ability to troubleshoot issues from UI to database.
 
 * Project Direction
-  : Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.
+  : Interviewer and core-member of team, independently trained more than 5 newcomers.
 
 -------
 
@@ -41,27 +41,27 @@ Focus in backend deployment
 Kuaishou
 : *senior software engineer*
   __2018.1-NOW__
-  Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials.
+  Backend development of Kuaishou live. Responsible for the development and maintenance of the core framework components of the business architecture, build multiple signaling frameworks to completely decouple the live long-connection server from the business; responsible for the initialization and development of multiple core businesses.
 
 Tencent
 : *full-stack web developer, mobile application developer*
   __2017.7-2018.1__
-  Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials.
+  Mobile development & backend development of OMG media operation platform. Participated in the development of Tencent video innovative product client; responsible for the development and maintenance of the content crawl system; led the construction of SRE operation platform of OMG.
 
 Tencent
 : *backend developer, intern*
   __2016.5-2017.5__
-  Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
+  Backend development of OMG content management platform, supporting Tencent News, Tencent Video, Tencent.com and other businesses. Responsible for the functional iteration of Tencent's live cloud-editing system; participate in the development of the Caiyun platform; independently develop the label-system of the OMG content management platform; lead the construction of the private Composer Packagist.
 
 Xidian University
 : *informatics engineering, bachelor degree*
   __2013.8-2017.7__
-  Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
+  Winner of the National Encouragement Scholarship, outstanding graduate of the college. As a core member of the "Wecan Studio" organized by the school, he participated in many innovation competitions and won the first prize in the Shaanxi Division of the "Chinese Youth" APP Competition and the first prize in the Shaanxi Division of the "Internet+" College Student Innovation and Entrepreneurship Competition.
 
 ------
 
 ### Footer {#footer}
 
-Personal Website -- [xhinliang.com](xhinliang.com)
+Personal Website -- [xhinliang.com](https://xhinliang.com)
 
 ------

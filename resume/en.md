@@ -32,7 +32,7 @@ Senior software engineer with a wide range of interests, currently focusing on b
 3. TCP / HTTP / WebSocket
 4. MySQL / Redis / Memcached
 5. gRPC / ZooKeeper / Kafka
-6. Linux / macOS
+6. Linux / macOS / Docker
 
 ------
 
@@ -41,17 +41,17 @@ Senior software engineer with a wide range of interests, currently focusing on b
 Kuaishou
 : *senior software engineer*
   __2018.1-NOW__
-  Backend development of Kuaishou live. Responsible for the development and maintenance of the core framework components of the business architecture, build multiple signaling frameworks to completely decouple the live long-connection server from the business; responsible for the initialization and development of multiple core businesses.
+  Backend development of Kuaishou live. Responsible for the development and maintenance of the core framework components of the business architecture, build multiple signaling frameworks to completely decouple the live long-connection server from the business; responsible for the initialization and development of serial core businesses.
 
 Tencent
 : *full-stack web developer, mobile application developer*
   __2017.7-2018.1__
-  Mobile development & backend development of OMG media operation platform. Participated in the development of Tencent video innovative product client; responsible for the development and maintenance of the content crawl system; led the construction of SRE operation platform of OMG.
+  Mobile development & backend development of OMG media operation platform. Participated in the development of Tencent video innovative product client; responsible for the development and maintenance of the content crawl system; lead the construction of SRE operation platform; lead the construction of the private Composer Packagist.
 
 Tencent
 : *backend developer, intern*
   __2016.5-2017.5__
-  Backend development of OMG content management platform, supporting Tencent News, Tencent Video, Tencent.com and other businesses. Responsible for the functional iteration of Tencent's live cloud-editing system; participate in the development of the Caiyun platform; independently develop the label-system of the OMG content management platform; lead the construction of the private Composer Packagist.
+  Backend development of OMG content management platform. Supporting Tencent News, Tencent Video, Tencent.com and other businesses; responsible for the functional iteration of Tencent's live cloud-editing system; participate in the development of the Caiyun platform; independently develop the label-system of the OMG content management platform; 
 
 Xidian University
 : *informatics engineering, bachelor degree*

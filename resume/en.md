@@ -41,7 +41,7 @@ Senior software engineer with a wide range of interests, currently focusing on b
 Kuaishou
 : *backend developer*
   __2018.1-NOW__
-  Backend development of Kuaishou live. Pioneer of live platform, supporting ; Maintenaner of multiple signaling frameworks which completely decouple the live long-connection server from the business; Core developer of serial core businesses such as wish list, live cover, wheel decide and so on.
+  Backend development of Kuaishou live. Pioneer of live platform, supporting multiple application for building live feature; Maintenaner of multiple signaling frameworks which completely decouple the live long-connection server from the business; Core developer of serial core businesses such as wish list, live cover, wheel decide and so on.
 
 Tencent
 : *full-stack web developer, mobile application developer*

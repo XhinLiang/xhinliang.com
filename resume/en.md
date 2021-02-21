@@ -56,7 +56,7 @@ Tencent
 Xidian University
 : *informatics engineering, bachelor degree*
   __2013.8-2017.7__
-  Winner of the National Encouragement Scholarship, outstanding graduate of the college. Core member of the "Wecan Studio", won the first prize in the Division of the "Chinese Youth" App Competition and the first prize of Division of the "Internet+" College Innovation Competition.
+  Winner of the National Encouragement Scholarship; Outstanding graduate of the college; Core member of the "Wecan Studio", won the first prize of the "Chinese Youth" App Competition and the first prize of the "Internet+" College Innovation Competition.
 
 ------
 

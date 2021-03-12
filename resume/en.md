@@ -46,17 +46,17 @@ Kuaishou
 Tencent
 : *Full-stack Developer*
   __2017.7-2018.1__
-  Mobile development & backend development of OMG media operation platform. Participated in the development of Tencent video innovative product client; Maintenaner of the content crawl system; Developer of the SRE operation platform; Lead the construction of the private Composer Packagist.
+  Mobile development & backend development of media operation platform. Participated in the development of Moka app; Maintenaner of the content crawl system; Developer of the SRE operation platform; Lead the construction of the private Composer Packagist.
 
 Tencent
 : *Backend Developer, Intern*
   __2016.5-2017.5__
-  Backend development of OMG content management platform. Responsible for the iteration of Tencent's live cloud-editing system; Participate in the development of the Caiyun platform; Independently develop the label-system of the OMG content management platform.
+  Backend development of content management platform. Responsible for the iteration of live cloud-editing system; Participate in the development of the Caiyun platform.
 
 Xidian University
 : *Informatics Engineering, Bachelor*
   __2013.8-2017.7__
-  Winner of the National Encouragement Scholarship; Outstanding graduate of the college; Core member of the "Wecan Studio", won the first prize of the "Chinese Youth" App Competition and the first prize of the "Internet+" College Innovation Competition.
+  Winner of the National Encouragement Scholarship; Outstanding graduate of the college.
 
 ------
 

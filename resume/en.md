@@ -44,7 +44,7 @@ Kuaishou
   Backend development of Kuaishou live. Pioneer of live platform, supporting several application for building live feature; Maintenaner of multiple signaling frameworks which completely decouple the live long-connection server from the business; Core developer of serial core businesses such as wish list, live cover, wheel decide and so on.
 
 Tencent
-: *Full-stack Developer*
+: *Fullstack Developer*
   __2017.7-2018.1__
   Mobile development & backend development of media operation platform. Participated in the development of Moka app; Maintenaner of the content crawl system; Developer of the SRE operation platform; Lead the construction of the private Composer Packagist.
 

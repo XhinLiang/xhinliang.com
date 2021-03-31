@@ -8,7 +8,7 @@
 
 ### Profile {#profile}
 
-Senior software engineer with a wide range of interests, currently focusing on backend development and distributed systems.
+Senior software engineer with a wide range of interests, focusing on backend development and distributed systems.
 
 ------
 

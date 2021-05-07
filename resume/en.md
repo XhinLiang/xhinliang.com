@@ -31,8 +31,8 @@ Senior software engineer with a wide range of interests, focusing on backend dev
 2. Netty / Guava / JUC
 3. TCP / HTTP / WebSocket
 4. MySQL / Redis / Memcached
-5. gRPC / ZooKeeper / Kafka
-6. Linux / macOS / Docker
+5. ZooKeeper / Kafka / gRPC
+6. Linux / macOS / Kubernetes
 
 ------
 

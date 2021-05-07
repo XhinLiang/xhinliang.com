@@ -62,6 +62,6 @@ Xidian University
 
 ### Footer {#footer}
 
-Personal Website -- [xhinliang.com](https://xhinliang.com)
+[xhinliang.com](https://xhinliang.com)
 
 ------

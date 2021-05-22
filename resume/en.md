@@ -8,7 +8,7 @@
 
 ### Profile {#profile}
 
-Senior software engineer with a wide range of interests, focusing on backend development and distributed systems.
+Senior software engineer with a wide range of interests, focusing on backend development and distributed system.
 
 ------
 
@@ -18,10 +18,10 @@ Senior software engineer with a wide range of interests, focusing on backend dev
   : Proficient in backend deployment, familiar with operating system, RDBMS, distributed system and computer network.
 
 * Frontend Deployment
-  : Understand Android / iOS / Web frontend development, mastered the ability to troubleshoot issues from UI to database.
+  : Understand mobile and web development, mastered the ability to troubleshoot issues from interface to database.
 
-* Project Direction
-  : Interviewer and core-member of team, independently trained more than 5 newcomers.
+* Project Management
+  : Expert in project management with excellent ability of writing or communicating and strong sense of responsibility.
 
 -------
 
@@ -41,17 +41,17 @@ Senior software engineer with a wide range of interests, focusing on backend dev
 Kuaishou
 : *Backend Developer*
   __2018.1-NOW__
-  Backend development of Kuaishou live. Pioneer of live platform, supporting several application for building live feature; Maintenaner of multiple signaling frameworks which completely decouple the live long-connection server from the business; Core developer of serial core businesses such as wish list, live cover, wheel decide and so on.
+  Backend developer of server platform, building the biggest and the amazing live streaming platform in the world; Architect of serial foundational features such as signaling frameworks, cover storing, TCP networking and CDN scheduling; Stability director of several substantial evnets, supporting Spring Festival, National Day and Promotion Nights; Youngest interviewer of team, technical lecturer of stuff, mentor of newcomers.
 
 Tencent
 : *Fullstack Developer*
   __2017.7-2018.1__
-  Mobile development & backend development of media operation platform. Participated in the development of Moka app; Maintenaner of the content crawl system; Developer of the SRE operation platform; Lead the construction of the private Composer Packagist.
+  Backend developer of the SRE operation platform and content-crawling system; Mobile develeper of MOKA app.
 
 Tencent
 : *Backend Developer, Intern*
   __2016.5-2017.5__
-  Backend development of content management platform. Responsible for the iteration of live cloud-editing system; Participate in the development of the Caiyun platform.
+  Backend developer of cloud-publishing platform and cloud-editing system.
 
 Xidian University
 : *Informatics Engineering, Bachelor*

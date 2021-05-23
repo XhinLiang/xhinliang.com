@@ -37,7 +37,7 @@ Build with plain HTML & JavaScript.
 
 ## `resume`
 
-Write in `Markdown` and will be converted to HTML after building.
+Writing in `Markdown`, converted to HTML after building.
 
 # Licence
 

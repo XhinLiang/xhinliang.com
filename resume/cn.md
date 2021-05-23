@@ -1,67 +1,67 @@
 # Xhin Liang
-## Senior software engineer, full-stack web developer.
+## Senior software engineer
 
 > ✉️ <x@xhinliang.com>  
-> 🌎 [xhinliang.com/resume/en](/resume/en)
+> 🇨🇳 [xhinliang.com/resume/cn](/resume/cn)
 
 ------
 
-### 简介 {#profile}
+### Profile {#profile}
 
 兴趣广泛的软件工程师，目前关注于后端开发与分布式系统。
 
 ------
 
-### 技能 {#skills}
+### Skills {#skills}
 
 * Backend Deployment
-  : Assertively exploit wireless initiatives rather than synergistic core competencies.
+  : 熟悉 Java PHP Python 开发语言，理解操作系统、计算机网络、分布式系统。
 
 * Frontend Deployment
-  : Credibly streamline mission-critical value with multifunctional functionalities.
+  : 了解客户端和 Web 前端开发，具备从界面到数据库的问题排查能力。
 
-* Project Direction
-  : Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.
+* Project Management
+  : 擅长沟通和写作，拥有强烈的责任心，具备卓越的项目管理能力。
 
 -------
 
 ### Technical {#technical}
 
 1. Java / Python / JavaScript
-2. Netty / JUC / Guava
+2. Netty / Guava / JUC
 3. TCP / HTTP / WebSocket
 4. MySQL / Redis / Memcached
-5. gRPC / ZooKeeper / Kafka
-6. Linux / macOS
+5. ZooKeeper / Kafka / gRPC
+6. Linux / macOS / Kubernetes
 
 ------
 
 ### Experience {#experience}
 
-Kuaishou
-: *senior software engineer*
+快手
+: *Backend Developer*
   __2018.1-NOW__
-  Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials.
+  Backend developer of server platform, building the most dramatic and largest live streaming platform in the world; Architect of serial foundational features such as signaling frameworks, cover storing, TCP networking and CDN scheduling; Stability director of several substantial evnets, supporting Spring Festival, National Day and Promotion Night; Youngest interviewer of team, technical lecturer of stuff, mentor of newcomers.
 
-Tencent
-: *full-stack web developer, mobile application developer*
+腾讯
+: *全栈开发工程师*
   __2017.7-2018.1__
-  Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials.
+  参与运维管理平台后端开发、内容抓取系统后端开发，期间还参与了 MOKA 的 iOS 客户端开发。
 
-Tencent
-: *backend developer, intern*
+腾讯
+: *后端开发工程师，实习*
   __2016.5-2017.5__
-  Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.
+  云剪辑平台后端开发，彩云出版平台后端开发。
 
-西安电子大学
-: *信息工程，本科*
+西安电子科技大学
+: *信息工程, 本科*
   __2013.8-2017.7__
-  国家励志奖学金获得者，学院优秀毕业生。
+  国家励志奖学金获得者；学院优秀毕业生。
 
 ------
 
 ### Footer {#footer}
 
-个人网站 -- [xhinliang.com](https://xhinliang.com)
+[xhinliang.com](https://xhinliang.com)
 
 ------

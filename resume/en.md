@@ -41,7 +41,7 @@ Senior software engineer with a wide range of interests, focusing on backend dev
 Kuaishou
 : *Backend Developer*
   __2018.1-NOW__
-  Backend developer of server platform, building the biggest and the amazing live streaming platform in the world; Architect of serial foundational features such as signaling frameworks, cover storing, TCP networking and CDN scheduling; Stability director of several substantial evnets, supporting Spring Festival, National Day and Promotion Nights; Youngest interviewer of team, technical lecturer of stuff, mentor of newcomers.
+  Backend developer of server platform, building the most dramatic and largest live streaming platform in the world; Architect of serial foundational features such as signaling frameworks, cover storing, TCP networking and CDN scheduling; Stability director of several substantial evnets, supporting Spring Festival, National Day and Promotion Night; Youngest interviewer of team, technical lecturer of stuff, mentor of newcomers.
 
 Tencent
 : *Fullstack Developer*

@@ -21,7 +21,7 @@ Senior software engineer with a wide range of interests, focusing on backend dev
   : Understand mobile and web development, mastered the ability to troubleshoot issues from interface to database.
 
 * Project Management
-  : Expert in project management with excellent ability of writing or communicating and strong sense of responsibility.
+  : Capable in project management with brilliant ability of writing or communicating and strong sense of responsibility.
 
 -------
 

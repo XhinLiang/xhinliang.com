@@ -2,42 +2,40 @@
 
 ## Overview
 
-My personal site: [xhinliang.com](https://xhinliang.com).
+My personal site: [xhinliang.com](https://xhinliang.com). Build with Docker and deploy by [daocloud.com](https://daocloud.io).
 
-Build with docker & deploy with [daocloud.com](https://daocloud.io)
-
-This project contains four modules: `home` `about` `image` `resume`
-
-## Build & Run
-
-### build
-`make build`
-
-### run
-`make run`
-
-### debug with bash
-`make bash`
-
-## `About` module
-
-Build with `impress.js`, just HTML & CSS & JavaScript and nothing special.
+This project contains three modules: `home` `image` `resume`.
 
 ## `Image` module
 
-Build with `Express.js` & `Redis`.
+Image module is builded by `Express.js` & `Redis`, providing some API for this site.
 
-This service provide some API for this site.
+By crawling photos of my `LOFTER` and storing to Redis intervaly, it can provide all the urls of of my `LOFTER` photo by RESTful API.
 
-It will crawl my `LOFTER` site intervaly, and store my photos into Redis, so I can use the photos of my `LOFTER`.
+## `Home` module
 
-## `Home`
+Home module is a static front end page,  builded by plain plain HTML and JavaScript.
 
-Build with plain HTML & JavaScript.
+## `Resume` module
 
-## `resume`
+Resume module provide some information of me, Writing in `Markdown`, and automaticly converted to HTML by some tools.
 
-Writing in `Markdown`, converted to HTML after building.
+## Build & Run
+
+There are some Makefile scripts for building and debuging.
+
+### build
+
+To build this project to Docker Image, just run `make build`.
+
+### run
+
+To run this project to in Docker Container, just run `make run`.
+
+### debug with bash
+
+To run this project to in Docker Container, and enter the Container via bash, just run `make bash`.
+
 
 # Licence
 

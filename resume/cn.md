@@ -15,7 +15,7 @@
 ### Skills {#skills}
 
 * Backend Deployment
-  : 熟悉 Java PHP Python 开发语言，理解操作系统、计算机网络、分布式系统。
+  : 熟悉 Java JavaScript Python 开发语言，理解操作系统、关系数据库、计算机网络、分布式系统。
 
 * Frontend Deployment
   : 了解客户端和 Web 前端开发，具备从界面到数据库的问题排查能力。

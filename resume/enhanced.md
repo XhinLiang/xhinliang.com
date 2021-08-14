@@ -3,6 +3,8 @@
 
 > ✉️ <x@xhinliang.com>  
 > 🇨🇳 [xhinliang.com/resume/cn](/resume/cn)  
+> 📱 (+86)18537903271
+
 
 ------
 
@@ -21,7 +23,7 @@ Senior software engineer with a wide range of interests, focusing on backend dev
   : Understand mobile and web development, mastered the ability to troubleshoot issues from interface to database.
 
 * Project Management
-  : Well capable in project management with strong sense of responsibility, skilled at writing and communicating.
+  : Well Capable in project management with strong sense of responsibility, skilled at writing and communicating.
 
 -------
 
@@ -42,7 +44,7 @@ Kuaishou
 : *Backend Developer*
   __2018.1-NOW__
   Backend developer of server platform, building the most dramatic and largest live streaming platform in the world;  
-  Architect of serial foundational features such as signaling frameworks, cover storing, TCP networking and CDN scheduling;  
+  Architect of serial foundational features such as live signaling frameworks, cover storing, TCP networking and CDN scheduling;  
   Stability director of several substantial events, supporting Spring Festival, National Day and Promotion Night;  
   One of the youngest interviewer and technical speaker in the company.
 
@@ -60,6 +62,24 @@ Xidian University
 : *Informatics Engineering, Bachelor*
   __2013.8-2017.7__
   Winner of the National Encouragement Scholarship; Outstanding graduate of the college.
+
+-----
+
+### Highlight {#highlight}
+
+Singaling Frameworks
+:  
+  __Kuaishou__
+  According to the protocal and broadcasting model of long-connection server, we built several frameworks which totaly decouple it from bussniesses.  
+  These frameworks support different sytle bussiness by defferent part, including ActionSignal, StateSignal, GlobalBroadcastSignal, etc.  
+  All of them are widely used and obviously improve the develop efficiency.
+
+Karthas
+:  
+  __Kuaishou__
+  As a part-time developer, joined the infra team and build a JVM tool independently called Karthas which based on Arthas.  
+  Based on Arthas, Karthas support more effective function to use, such as web-console, initial-script, and the killer feature called MVEL.
+  Relying on MVEL, we can call any method of our application conveniently. I made this feature open-sourced in [arthas-mvel](https://github.com/XhinLiang/arthas-mvel)
 
 ------
 

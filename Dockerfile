@@ -39,6 +39,8 @@ COPY ./dockerfiles/redis.conf /etc/redis/redis.conf
 ADD . /app
 RUN cd /app/resume/ && ./markdown-resume/bin/md2resume html en.md /app/resume/ --title "XhinLiang's CV" && cp /app/resume/en.html /app/resume/index.html
 RUN cd /app/resume/ && ./markdown-resume/bin/md2resume html cn.md /app/resume/ --title "XhinLiang's CV"
+RUN cd /app/resume/ && ./markdown-resume/bin/md2resume html en-enhanced.md /app/resume/ --title "XhinLiang's CV"
+RUN cd /app/resume/ && ./markdown-resume/bin/md2resume html cn-enhanced.md /app/resume/ --title "XhinLiang's CV"
 # run supervisor
 CMD ["/usr/bin/supervisord"]
 EXPOSE 2333

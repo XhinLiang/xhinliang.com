@@ -2,7 +2,7 @@
 ## Senior software engineer
 
 > ✉️ <x@xhinliang.com>  
-> 🇨🇳 [xhinliang.com/resume/cn](/resume/cn)  
+> 🇨🇳 [xhinliang.com/resume/cn-enhanced](/resume/cn-enhanced)  
 > 📱 (+86)18537903271
 
 

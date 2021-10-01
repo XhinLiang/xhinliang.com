@@ -2,7 +2,7 @@
 ## 高级软件工程师、全栈工程师
 
 > ✉️ <x@xhinliang.com>  
-> 🌎 [xhinliang.com/resume/en](/resume/en)  
+> 🌎 [xhinliang.com/resume/en-enhanced](/resume/en-enhanced)  
 > 📱 (+86)18537903271
 
 ------

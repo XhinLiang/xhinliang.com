@@ -27,7 +27,7 @@ Senior software engineer with a wide range of interests, focusing on backend dev
 
 -------
 
-### Technical {#technical}
+### Tech Stack {#techstack}
 
 1. Java / Python / JavaScript
 2. Netty / Guava / JUC
@@ -65,9 +65,24 @@ Xidian University
 
 -----
 
-### Highlight {#highlight}
+### Highlights {#highlight}
 
-Singaling Frameworks
+
+Scalable Shading Framework
+:  
+  __Kuaishou__
+  Kuaishou provide a live streaming platform which was supporting over 400k broadcasting room concurrently.  
+  Each broadcasting room has it's own business data or flow to process, such as watching list, online count, or some boring games base on live streaming.  
+  We designed a framework based on ZooKeeper and gRPC, the core concept of this framework is from MapReduce. When we need to process some new feature of each broadcasting room, we can simply using this framework to implement our business logic, and this framework will automaticly scale up or down according tho the number of process node.
+
+SAGA like Red Envelope Framework
+:  
+  __Kuaishou__
+  In China, Red Envelope is common way to attract people to increase user engagement. We can meet many Red Envelope in a same application, but there are some differences and also some similarities between them.   
+  According to the common usages, we designed a framework based on gRPC and MySQL, aiming to reduce the duplicate developing work in most Red Envelope use cases. The core idea is similar with a distributed transatiion method called SAGA.    
+  The framework provide four core functions, including create and deposit, divide and transfer, covering the whole lifecycle of Red Envelope. When we are building a new Red Envelope use case, all we need to do is just register in the framework and implement some required currency management method.  
+
+Live Signaling Frameworks
 :  
   __Kuaishou__
   According to the protocal and broadcasting model of long-connection server, we built several frameworks which totaly decouple it from bussniesses.  

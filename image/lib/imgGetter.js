@@ -3,7 +3,7 @@ const spidex = require("spidex");
 const path = require("path");
 const fs = require("fs");
 const URL = require("url");
-const cache = require('../db/cache');
+const cache = require('../db/fakecache');
 const base = 'download';
 const tool = require("../core/tool");
 
@@ -31,10 +31,10 @@ function getSaveRedis() {
     return function (year, month, filename, buf, url, callback) {
         let key = tool.getNextRedisKey();
         cache.sadd(key, url, cache.print);
-        cache.expire(key, 60 * 60 * 4, cache.print);
+        cache.expire(key, 2 * 60 * 60 * 1000, cache.print);
         key = tool.getCurrentRedisKey();
         cache.sadd(key, url, cache.print);
-        cache.expire(key, 60 * 60 * 4, cache.print);
+        cache.expire(key, 2 * 60 * 60 * 1000, cache.print);
         callback(null);
     }
 }

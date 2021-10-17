@@ -157,7 +157,6 @@ body.mobile.two-columns #container{
 }
 
 #header{
-  border-bottom:1px solid #d3d3d3;
   margin:1em;
   float:left;
   height:5em;
@@ -307,7 +306,6 @@ body.mobile #content {
        color:#000000;
        font-weight:500;
        letter-spacing: -0.03em;
-       border-bottom:1px solid #d3d3d3;
 }
 
 #content a:link{
@@ -647,7 +645,6 @@ body.two-columns #content #alpha .module h2{
        font-weight:bold;
        padding:0.3em 0.5em;
        margin:0.5em 0.4em 0.1em 0.4em;
-       border-bottom:1px solid #d3d3d3;
 }
 
 /* Module */

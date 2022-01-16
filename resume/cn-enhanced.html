@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>xhinliang-cn-enhanced</title>
+<style type="text/css">
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+p,
+pre {
+  margin: 1em 0;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 75%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body.pdf {
+  color: black;
+}
+body.pdf a {
+  text-decoration: none;
+  color: black;
+}
+body.pdf .container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  border: none;
+  border-width: 8px 0 2px 0;
+  text-align: left;
+}
+body.pdf .resume {
+  position: relative;
+  padding: 40px 80px;
+}
+body.pdf a[href$='.pdf'] {
+  display: none;
+}
+body.pdf h1 {
+  letter-spacing: 0;
+  margin-top: 0;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+body.pdf h2 {
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: normal;
+}
+body.pdf h3 {
+  float: left;
+  width: 16%;
+  font-style: normal;
+}
+body.pdf h3+p {
+  float: left;
+  width: 78%;
+}
+body.pdf blockquote {
+  top: 40px;
+  right: 50px;
+  position: absolute;
+}
+body.pdf ul dl {
+  margin: 0;
+  padding: 0.3em 0 0;
+}
+body.pdf ul dl dt {
+  font-size: 122%;
+  font-weight: normal;
+  margin: 0 0 .75em;
+}
+body.pdf ul dl dd {
+  padding: 0 2em 0 0;
+}
+body.pdf ol {
+  float: left;
+  width: 79%;
+  margin: .7em 0 0;
+}
+body.pdf ol li {
+  width: 33%;
+  margin: 0;
+}
+body.pdf ol li:nth-child(3n) {
+  width: 34%;
+}
+body.pdf ol li:nth-child(1),
+body.pdf ol li:nth-child(2),
+body.pdf ol li:nth-child(3) {
+  border-top: none;
+}
+body.pdf dl {
+  margin: .7em 0 0;
+  page-break-inside: avoid !important;
+  display: block;
+  width: 79%;
+  float: left;
+}
+body.pdf dl strong {
+  float: right;
+  margin-top: -2em;
+}
+body.pdf dl em {
+  font-size: 130%;
+  font-style: normal;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+body {
+  font-family: 'Hoefler Text', Times New Roman, Times, serif;
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+ul dl dt {
+  font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0;
+  background: whiteSmoke;
+  border: solid #666;
+  border-width: 8px 0 2px 0;
+  text-align: left;
+}
+.resume {
+  position: relative;
+  padding: 10px 20px;
+}
+a {
+  color: #990003;
+}
+a[href$='.pdf'] {
+  display: inline-block;
+  background: #666;
+  color: white;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+blockquote {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+}
+hr {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 18px auto;
+  width: 100%;
+  clear: both;
+  border: none;
+  border-top: 1px solid #CCC;
+  font-size: 1px;
+  line-height: 0;
+  overflow: visible;
+  page-break-after: avoid;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+h3 {
+  margin: 0px 20px;
+  padding: 0 0 .5em;
+  font-size: 150%;
+  font-style: italic;
+  font-weight: normal;
+}
+h3+p {
+  margin: .6em 0 16px;
+  padding: 0;
+  display: block;
+  font-size: 104%;
+  line-height: 24px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+  flex-basis: 33%;
+}
+ul dl {
+  margin: .3em 0 0;
+  padding: 0;
+  width: 100%;
+}
+ul dl dt {
+  font-size: 100%;
+}
+ul dl dd {
+  margin: 0 0 1em;
+  padding: 0 2em 0 0;
+  font-size: .8em;
+  line-height: 1.5em;
+}
+ol {
+  margin: 0;
+  padding: 0 0 .75em;
+  width: 84%;
+  display: inline-block;
+}
+ol li {
+  margin: 0 0 0 1em;
+  padding: 0;
+  border-top: 1px solid #CCCCCC;
+  width: 100%;
+  float: left;
+  list-style: none;
+  line-height: 24px;
+  font-size: 14px;
+}
+ol li:nth-child(1) {
+  border-top: none;
+}
+dl {
+  display: inline-block;
+  width: 78%;
+  margin: 0;
+  padding: 0;
+}
+dl dt {
+  margin: 0;
+  padding: 0;
+  font-size: 140%;
+}
+dl dd {
+  margin: 0 0 1.5em;
+  padding: 0;
+  font-size: 80%;
+  line-height: 1.4em;
+}
+dl strong {
+  display: block;
+}
+dl em {
+  display: block;
+  font-size: 110%;
+  margin: .15em 0 .5em;
+  font-style: bold;
+}
+#footer {
+  display: none;
+}
+#footer + p {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media screen and (min-width: 37.5em) {
+  body {
+    padding: 2em 0;
+  }
+  blockquote {
+    top: 10px;
+    right: 50px;
+    position: absolute;
+  }
+  h1 {
+    margin-top: .5em;
+  }
+  ol {
+    margin: 0 0 0 1em;
+  }
+  ol li {
+    width: 50%;
+    margin: 0;
+  }
+  ol li:nth-child(1),
+  ol li:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 57em) {
+  .container {
+    width: 912px;
+  }
+  .resume {
+    position: relative;
+    padding: 40px 50px;
+  }
+  blockquote {
+    top: 40px;
+    right: 50px;
+    position: absolute;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+  h3 {
+    float: left;
+    width: 16%;
+  }
+  h3+p {
+    float: left;
+    width: 78%;
+  }
+  ul dl dt {
+    font-size: 122%;
+    font-weight: normal;
+    margin-bottom: .75em;
+  }
+  ul dl dd {
+    padding: 0 2em 0 0;
+  }
+  ol {
+    float: left;
+    width: 79%;
+    margin: .6em 0 0;
+  }
+  ol li {
+    width: 33%;
+    margin: 0;
+  }
+  ol li:nth-child(3n) {
+    width: 34%;
+  }
+  ol li:nth-child(1),
+  ol li:nth-child(2),
+  ol li:nth-child(3) {
+    border-top: none;
+  }
+  dl {
+    margin: .5em 0 0;
+  }
+  dl strong {
+    float: right;
+    margin-top: -2em;
+  }
+  dl em {
+    font-size: 130%;
+    font-style: normal;
+  }
+}
+
+</style>
+</head>
+
+<body class="">
+
+<div class="container">
+    <div class="resume">
+        <h1>梁栩华</h1>
+
+<h2>后端开发工程师</h2>
+
+<blockquote>
+  <p>✉️ <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#120;&#64;&#x78;&#x68;&#105;&#110;&#x6c;&#x69;&#97;&#110;g&#x2e;&#x63;&#111;&#109;">&#120;&#64;&#x78;&#x68;&#105;&#110;&#x6c;&#x69;&#97;&#110;g&#x2e;&#x63;&#111;&#109;</a><br />
+  🌎 <a href="/resume/en-enhanced">xhinliang.com/resume/en-enhanced</a><br />
+  📱 (+86)18537903271</p>
+</blockquote>
+
+<hr />
+
+<h3 id="profile">Profile</h3>
+
+<p>兴趣广泛的软件工程师，目前关注于后端开发与分布式系统。</p>
+
+<hr />
+
+<h3 id="skills">Skills</h3>
+
+<ul>
+<li><dl>
+<dt>后端开发</dt>
+<dd>了解直播系统的方方面面，擅长业务抽象、框架设计，拥有大型分布式系统开发经验。</dd>
+</dl></li>
+<li><dl>
+<dt>Web 开发</dt>
+<dd>熟悉网络协议，拥有全栈开发经验，具备端到端的理解能力。</dd>
+</dl></li>
+<li><dl>
+<dt>项目管理</dt>
+<dd>擅长写作和沟通，具备良好的项目管理能力，有强烈的责任心。</dd>
+</dl></li>
+</ul>
+
+<hr />
+
+<h3 id="technical">Technical</h3>
+
+<ol>
+<li>Java / Python / JavaScript</li>
+<li>Netty / Guava / JUC</li>
+<li>TCP / HTTP / WebSocket</li>
+<li>MySQL / Redis / Memcached</li>
+<li>gRPC / ZooKeeper / Kafka</li>
+<li>Linux / macOS</li>
+</ol>
+
+<hr />
+
+<h3 id="experience">Experience</h3>
+
+<dl>
+<dt>快手科技</dt>
+<dd><em>直播后端架构组-资深后端开发</em>
+<strong>2018.1-NOW</strong>
+快手直播业务后端开发，开发和维护着世界上最大的直播平台，见证在线数从百万量级到千万量级的变迁。<br />
+作为核心架构开发者，主导开发了直播信令框架、封面存储和审核系统，主导优化了长连接网络以及 CDN 调度算法；<br />
+连续作为后端负责人参与了多个活动的稳定性保障，例如春晚直播、616大促、国庆直播等，平稳支撑千万级在线，中间无故障产生；<br />
+连续多次优秀绩效，成为组里最年轻的面试官，并作为讲师负责了多次内部培训。</dd>
+
+<dt>腾讯科技</dt>
+<dd><em>腾讯视频-Web开发 &amp; 网络媒体技术部-后端开发实习生</em>
+<strong>2016.5-2018.1</strong>
+在网媒内容管理平台中心实习，并得到转正。<br />
+实习期间参与直播剪辑系统及彩云出版系统的维护与开发，以及腾讯视频移动开发&amp;网媒运营平台后端开发。<br />
+工作期间参与腾讯视频创新产品客户端开发，参与内容抓取系统开发与维护，主导搭建网媒运维监控集成平台。</dd>
+
+<dt>西安电子科技大学</dt>
+<dd><em>信息工程，本科</em>
+<strong>2013.8-2017.7</strong>
+国家励志奖学金获得者，学院优秀毕业生。</dd>
+</dl>
+
+<hr />
+
+<h3 id="highlight">Highlights</h3>
+
+<dl>
+<dt>直播信令框架</dt>
+<dd>
+<strong>主导开发、负责维护</strong>
+我们通过分析不同业务场景共性需求，将信令分成了状态同步、消息展示、全局通知等多个类型，并设计抽象框架解决老方式开发成本高、消息易丢失、性能低下等问题。<br />
+这些信令框架在 19 年开始设计并开始使用，稳定支撑了榜单推送、PK、连麦、小时榜等功能，日均发送信令数量近百亿，通过多次千万级同时在线的活动直播的考验。</dd>
+
+<dt>直播分布式计算框架</dt>
+<dd>
+<strong>参与开发、负责维护</strong>
+随着业务发展，快手直播下的业务功能越来越多。我们基于 ZooKeeper 和 gRPC 设计了一个分布式计算框架，核心理念类似 MapReduce。在框架中，每个房间级别的业务功能处理逻辑会平均分布在各个计算节点上，业务只需要关注自己的核心计算逻辑。<br />
+通过接入框架，我们便捷地实现了直播间的榜单计算、PK分数计算、在线数计算等核心功能，并能根据实际业务场景进行动态扩缩容，在百万量级房间数的情况下依然保持了优秀的可用性。</dd>
+
+<dt>直播场景下的红包中台</dt>
+<dd>
+<strong>主导开发、负责维护</strong>
+红包是一个很常见的运营手段。我们参照了 SAGA 分布式事务的思想，设计了一个红包中台，能够快速支持常见的红包功能的开发。<br />
+通过接入这样一个红包中台业务上仅需实现几个样板方法，即可以实现红包的核心功能。红包中台会根据预估抢红包人数自动进行请求打散、数据分片等功能，同时红包中台也可以支持各种支付来源，并使用 Kafka + 轮刷的手段保证业务准确性。<br />
+红包中台支持了多个直播间内的功能，例如竞猜抽奖、口令红包、穿云箭红包等，并稳定支持了数百万同时在线的抢红包行为。</dd>
+
+<dt>Karthas</dt>
+<dd>
+<strong>独立开发、负责维护</strong>
+Kbox 是快手基于 OpenJDK 定制的 JDK。我利用业余时间加入了其中的开发，并独立实现了 Karthas 功能。<br />
+Karthas 基于 Arthas 定制开发，为快手添加了多个定制场景的功能。例如 web-console initial-script，以及最受欢迎的杀手功能 MVEL。通过 MVEL，我们可以在运行时动态执行任意的方法，实现类似 Python 的 REPL 功能，极大地提高了工作效率，提升了问题排查速度。</dd>
+</dl>
+
+<hr />
+
+<h3 id="footer">Footer</h3>
+
+<p>个人网站 &#8212; <a href="https://xhinliang.com">xhinliang.com</a></p>
+
+<hr />
+
+    </div>
+</div>
+
+</body>
+</html>

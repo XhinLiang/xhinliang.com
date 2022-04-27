@@ -4,7 +4,7 @@
     "description": "Image Spider of lofter",
     "main": "spider.js",
     "dependencies": {
-        "async": "^1.0.0",
+        "async": "^2.6.4",
         "cheerio": "^0.19.0",
         "redis": "^2.6.2",
         "scarlet-task": "0.0.7",

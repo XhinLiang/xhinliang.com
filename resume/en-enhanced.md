@@ -17,7 +17,7 @@ Senior software engineer with a wide range of interests, focusing on backend dev
 ### Skills {#skills}
 
 * Backend Deployment
-  : Proficient in backend deployment, familiar with the operating system, RDBMS, distributed system and computer network.
+  : Proficient in backend deployment, familiar with the operating system, RDBMS, distributed system and computer networking.
 
 * Frontend Deployment
   : Understand mobile and web development, mastered the ability to troubleshoot issues from interface to database.
@@ -41,22 +41,22 @@ Senior software engineer with a wide range of interests, focusing on backend dev
 ### Experience {#experience}
 
 Kuaishou
-: *Backend Developer*
+: *Backend Engineer*
   __2018.1-NOW__
-  Backend developer of server platform, building the most dramatic and largest live streaming platform in the world;  
+  Backend engineer of server platform, building the most dramatic and largest live streaming platform in the world;  
   Architect of serial foundational features such as live signaling frameworks, cover storing, TCP networking and CDN scheduling;  
-  Stability director of several substantial events, supporting Spring Festival, National Day and Promotion Night;  
+  Stability PIC of several substantial events, supporting Spring Festival, National Day and Promotion Night;  
   One of the youngest interviewers and technical speakers in the company.
 
 Tencent
-: *Fullstack Developer*
+: *Fullstack Engineer*
   __2017.7-2018.1__
-  Backend developer of the SRE operation platform and content-crawling system; Mobile developer of MOKA app.
+  Backend engineer of the SRE operation platform and content-crawling system; Mobile engineer of MOKA app.
 
 Tencent
-: *Backend Developer, Intern*
+: *Backend Engineer, Intern*
   __2016.5-2017.5__
-  Backend developer of the cloud-publishing platform and cloud-editing system.
+  Backend engineer of the cloud-publishing platform and cloud-editing system.
 
 Xidian University
 : *Informatics Engineering, Bachelor*

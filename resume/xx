@@ -1,0 +1,4 @@
+Kuaishou provides a live-streaming platform that supports over 10 million user watching concurrently;
+Each user will create a long-connection with the server during watching session, according to the protocol and broadcasting model of the live-streaming long-connection server, we built several frameworks which totally decouple it from the business.
+These frameworks support different styles of business by using different strategies, including time-series, state-sync, global-notify, etc.
+As the core architect of this framework, I designed and implement the kernel part of these strategies. Used Redis/ZooKeeper to implement the aggregator, and created the grouping strategy platform by using ZooKeeper/MySQL, etc.

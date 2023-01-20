@@ -52,7 +52,7 @@ Kuaishou
   Backend engineer of server platform, building the most dramatic and largest live-streaming platform in the world;  
   Architect of serial foundational features such as signaling frameworks, cover storage, long-connection networking, and CDN scheduling;  
   Stability PIC of several substantial events, supporting Spring Festival, National Day, and Promotion Night;  
-  Technical speaker, bravo of the department, continuous outstanding performance employee.
+  Technical speaker, bravo of the department, continuous best performer.
 
 Tencent
 : *Fullstack Engineer, Intern & Employee*

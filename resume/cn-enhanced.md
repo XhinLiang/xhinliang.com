@@ -28,21 +28,28 @@
 
 ### Technical {#technical}
 
-1. Java / Python / JavaScript
+1. Java / Go
 2. Netty / Guava / JUC
 3. TCP / HTTP / WebSocket
 4. MySQL / Redis / Memcached
-5. gRPC / ZooKeeper / Kafka
-6. Linux / macOS
+5. ZooKeeper / Kafka / gRPC
+6. Linux / macOS / Kubernetes
 
 ------
 
 ### Experience {#experience}
 
+Shopee
+: *Content Service-Expert Engineer*
+  __2021.12-Now__
+  后端业务架构开发，对 logging, dynamic config, feature toggle, error handling 相关的后端框架有贡献；  
+  Content Service 内容搜索业务 Leader，带领 6 人团队负责内容搜索业务的前后端以及测试。
+
+
 快手科技
 : *直播后端架构组-资深后端开发*
   __2018.1-NOW__
-  快手直播业务后端开发，开发和维护着世界上最大的直播平台，见证在线数从百万量级到千万量级的变迁。  
+  快手直播业务后端开发，开发和维护着世界上最大的直播平台，见证在线数从百万量级到千万量级的变迁；  
   作为核心架构开发者，主导开发了直播信令框架、封面存储和审核系统，主导优化了长连接网络以及 CDN 调度算法；  
   连续作为后端负责人参与了多个活动的稳定性保障，例如春晚直播、616大促、国庆直播等，平稳支撑千万级在线，中间无故障产生；  
   连续多次优秀绩效，成为组里最年轻的面试官，并作为讲师负责了多次内部培训。
@@ -62,6 +69,14 @@
 -----
 
 ### Highlights {#highlight}
+
+
+Tracing & Logging 优化
+:  
+  __Shopee__
+  基于 Jaeger 设计了一套从前端到后端所有微服务的 tracing 流程，支持 sample 和白名单逻辑；  
+  基于现有 Spex RPC 框架扩展了 trace-id 以及多个业务必要参数的自动化透传；    
+  实现了一些有关 logging 和 tracing 的组件，包括 rate-logging, custom RPC header, error reporting 等，并编写多个部门级别的 OnBoarding 和 Manual 文档。
 
 直播信令框架
 :  
